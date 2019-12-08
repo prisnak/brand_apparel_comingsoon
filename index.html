@@ -15,45 +15,30 @@
     <title>Frontend Mentor | Base Apparel coming soon page</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      * {
-        margin: 0;
-        border: 0;
-      }
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
 
-      #container {
-        display: flex;
-        background-image: url("./images/bg-pattern-desktop.svg");
-      }
-
-      #content {
-        margin: 5% 10%;
-        box-sizing: border-box;
-      }
-
-      #logo {
-        margin: 30px auto;
-      }
-
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
     <div id="container">
-      <div id="content">
-        <img id="logo" src="./images/logo.svg" alt="brand logo" />
-        <div id="text">
-          <h1>We're coming soon</h1>
-          <p>
+      <div id="content_box">
+        <img id="logo" src="./assets/images/logo.svg" alt="brand logo" />
+        <div id="content">
+          <h1> <span>WE'RE</span> COMING SOON</h1>
+          <p id="text">
             Hello fellow shoppers! We're currently building our new fashion
             store. Add your email below to stay up-to-date with announcements
-            and our launch deals. Email Address
+            and our launch deals.
+            <form action="">
+                <input
+                type="email"
+                name="email"
+                id="email_input"
+                placeholder="Email Address"
+              />
+              <button type="submit"><img src="./assets/images/icon-arrow.svg"></img></button>
+            </form>
+
           </p>
         </div>
 
@@ -64,13 +49,13 @@
               href="https://www.frontendmentor.io?ref=challenge"
               target="_blank"
               >Frontend Mentor</a
-            >. Coded by <a href="#">Puri</a>.
+            >. Coded by <a href="#">Prisnak</a>.
           </p>
         </footer>
       </div>
 
       <div>
-        <img src="./images/hero-desktop.jpg" alt="woman in orange shirt" />
+        <img src="./assets/images/hero-desktop.jpg" alt="woman in orange shirt" />
       </div>
     </div>
   </body>
