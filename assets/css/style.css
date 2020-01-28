@@ -96,6 +96,11 @@ footer {
     left: 30px;
   }
 
+  h1 {
+    text-align: center;
+    letter-spacing: 20px;
+  }
+
   #text {
     margin: 5% 0%;
     text-align: center;
