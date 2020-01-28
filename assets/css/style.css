@@ -82,13 +82,22 @@ footer {
     display: block;
   }
 
+  #content {
+    width: 100%;
+  }
+
   #content_box {
-    margin: 20% 5% 20% 5%;
+    margin: 20% 10% 20% 10%;
   }
 
   #logo {
     position: absolute;
     top: 30px;
     left: 30px;
+  }
+
+  #text {
+    margin: 5% 0%;
+    text-align: center;
   }
 }
