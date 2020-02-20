@@ -5,16 +5,19 @@ body {
   font-size: 16px;
 }
 
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+  
 #container {
   /* display: flex; */
   font-family: "Josefin Sans", sans-serif;
   background-image: url("../images/bg-pattern-desktop.svg");
   background-repeat: no-repeat;
+  display: flex;
 }
 
-/* #content_box {
+#content_box {
   margin: 5% 5% 0% 10%;
-} */
+}
 
 #logo {
   margin: 0 0 10% 0;
@@ -77,42 +80,34 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
-@media screen and (max-width: 375px) {
-  #container {
-    display: block;
-  }
-
-  #content {
-    width: 100%;
-  }
-
-  #content_box {
-    margin: 20% 10% 20% 10%;
-  }
-
-  #logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-  }
-
-  h1 {
-    text-align: center;
-    letter-spacing: 20px;
-  }
-
-  #text {
-    margin: 5% 0%;
-    text-align: center;
-  }
+.heroDesktop {
+  display: block;
 }
 
-@media screen and (min-width: 376px) and (max-width: 1440px) {
+.heroMobile {
+  display: none;
+}
+
+}
+
+@media screen and (max-width: 375px) {
   #container {
     display: flex;
+    flex-direction: column;
   }
 
   #content_box {
     margin: 5% 5% 0% 10%;
+    order: 2;
+    width: 375px;
   }
+
+.heroDesktop {
+  display: none;
+}
+
+.heroMobile {
+  order: 1;
+  display: block;
+  width: 100%;
 }
