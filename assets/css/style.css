@@ -76,3 +76,33 @@ footer {
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
+
+@media screen and (min-width: 375px) {
+  #container {
+    display: block;
+  }
+
+  #content {
+    width: 100%;
+  }
+
+  #content_box {
+    margin: 20% 10% 20% 10%;
+  }
+
+  #logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  h1 {
+    text-align: center;
+    letter-spacing: 20px;
+  }
+
+  #text {
+    margin: 5% 0%;
+    text-align: center;
+  }
+}
