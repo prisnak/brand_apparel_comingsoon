@@ -5,6 +5,7 @@ body {
   font-size: 16px;
 }
 
+/* left content box */
 #container {
   font-family: "Josefin Sans", sans-serif;
   background-image: url("../images/bg-pattern-desktop.svg");
@@ -20,11 +21,6 @@ body {
 #logo {
   margin: 3em 5em 0 9em;
   position: absolute;
-}
-
-h1 {
-  font-size: 3.5em;
-  letter-spacing: 30px;
 }
 
 span {
@@ -71,6 +67,7 @@ footer {
   color: hsl(228, 45%, 44%);
 }
 
+/* Hero photo */
 .heroDesktop {
   display: block;
 }
@@ -90,21 +87,28 @@ footer {
     margin-left: -80px;
   }
 
+  h1 {
+    font-size: 3.5em;
+    letter-spacing: 30px;
+  }
+
   .attribution {
     margin-left: 100px;
   }
 }
 
+/* Mobile version */
 @media screen and (max-width: 375px) {
   #container {
-    /* display: flex; */
     flex-direction: column;
+    width: 375px;
   }
 
   #content_box {
     /* margin: 5% 5% 0% 10%; */
     order: 2;
     justify-content: center;
+    text-align: center;
   }
 
   #logo {
@@ -121,6 +125,12 @@ footer {
     display: block;
     width: 100%;
     margin-top: 5.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+    letter-spacing: 15px;
+    line-height: 1.2em;
   }
 
   button {
